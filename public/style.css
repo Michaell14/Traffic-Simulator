@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+}
+html{   
+    background-color: grey;
+    background-image: url("assets/road.png");
+    background-repeat: repeat;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.row{
+    width: 100%;
+}
+
+.vehicleright{
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: runright;
+    -webkit-animation-duration: 30s;
+}
+
+.vehicleleft{
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: runleft;
+    -webkit-animation-duration: 30s;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.bike{
+    top: 0px;
+}
+
+/* Car movement to the right */
+@keyframes runright {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: -20%;
+    }
+}
+
+/* Car movement to the left */
+@keyframes runleft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -20%;
+    }
+}
+
