@@ -1,6 +1,15 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("assets/ka1.ttf");
+}
+
+
 *{
     margin: 0;
+    font-family: myFirstFont;
 }
+
+
 html{   
     background-color: grey;
     background-image: url("assets/road.png");
@@ -42,7 +51,7 @@ html, body {
         right: 100%;
     }
     100% {
-        right: -20%;
+        right: -30%;
     }
 }
 
@@ -56,3 +65,24 @@ html, body {
     }
 }
 
+#timer{
+    position: absolute;
+    right: 2vw;
+    top: 3.5vh;
+    font-size: 25px;
+}
+
+.head{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-image: url("assets/road2.png");
+    background-repeat: repeat;
+}
+
+h2{
+    margin-top: 29px;
+    font-size: 27px;
+    white-space: nowrap;
+}
