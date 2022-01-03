@@ -3,7 +3,6 @@
     src: url("assets/ka1.ttf");
 }
 
-
 *{
     margin: 0;
     font-family: myFirstFont;
@@ -68,8 +67,9 @@ html, body {
 #timer{
     position: absolute;
     right: 2vw;
-    top: 3.5vh;
+    top: 30px;
     font-size: 25px;
+    color: #8A8635;
 }
 
 .head{
@@ -83,6 +83,19 @@ html, body {
 
 h2{
     margin-top: 29px;
-    font-size: 27px;
+    font-size: 30px;
     white-space: nowrap;
+}
+
+h3{
+    margin: 35px 0 0 20px;
+    white-space: nowrap;
+}
+
+.scores{
+    position: absolute;
+    left:0;
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
 }
